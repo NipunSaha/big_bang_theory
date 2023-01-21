@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>A-frame spe-particles system component</Title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity position="0 1 0" spe-particles="
+                color : yellow,blue,cyan,orange;
+                distribution : sphere;
+                randomize-velocity : true;
+                radius : 1;
+                particle-count : 1000;
+                velocity-spread : 15;
+                drag : 1;
+                max-age : 2.5;
+                duration : -1;
+                blending : additive;
+                active-multiplier : 1000;
+                size : 1,1,1,0;
+            "></a-entity>
+            <a-entity position="0 1 0" spe-particles="
+                color : white,red,violet,magenta;
+                distribution : disc;
+                randomize-velocity : true;
+                radius : 1;
+                particle-count : 1000;
+                velocity-spread : 15;
+                drag : 1;
+                max-age : 2.5;
+                duration : -1;
+                blending : additive;
+                active-multiplier : 1000;
+                size : 1,1,1,0
+            "></a-entity>
+            <a-entity position="0 1 0" spe-particles="
+                color : violet,Blue,Green,gray;
+                distribution : disc;
+                randomize-velocity : true;
+                radius : 1;
+                particle-count : 1000;
+                velocity-spread : 15;
+                duration : -1;
+                drag : 1;
+                max-age : 2.5;
+                blending : additive;
+                active-multiplier : 1000;
+                size : 1,1,1,0
+            "></a-entity>
+            <a-camera position="0 0 12"></a-camera>
+            <a-sky color="black"></a-sky>
+        </a-scene>
+    </body>
+</html>
